@@ -31,7 +31,7 @@ int32_t xpress::linux::semaphore::create(
     const std::string a_name,
     const uint32_t a_init_count)
 {
-  /* check name-length */
+  /* chack name-length */
   if((NAME_MAX-4) < a_name.length())
   {
     return -1;
