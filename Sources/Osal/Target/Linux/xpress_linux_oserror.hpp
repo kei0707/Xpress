@@ -8,8 +8,8 @@ namespace xpress::linux
   class oserror 
   {
     private:
-      int m_errorno;
     protected:
+      int m_errorno;
       /**
        * @brief 
        */

@@ -15,6 +15,11 @@ namespace xpress::linux
     protected:
       /* nothing */
     public:
+      enum error
+      {
+        ERROR_NONE = 0x00,
+      };
+
       /**
        * @brief 
        */
@@ -33,6 +38,13 @@ namespace xpress::linux
       int32_t create(
           const std::string a_name,
           const uint32_t a_init_count = 0);
+
+      /**
+       * @brief 
+       *
+       * @return 
+       */
+      int32_t destroy(void);
 
       /**
        * @brief 
