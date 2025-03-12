@@ -1,0 +1,19 @@
+@startuml
+
+!include ./Task/event_task.pu
+!include ./Message/event_message.pu
+!include ./Trigger/event_trigger.pu
+
+note as finalize_note
+    final属性をクラスに付与する
+end note
+
+timer <|-- node
+semaphore <|-- node
+queue<|-- node
+
+finalize_note .. timer
+finalize_note .. semaphore
+finalize_note .. queue
+
+@enduml

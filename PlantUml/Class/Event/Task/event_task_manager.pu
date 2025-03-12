@@ -1,0 +1,24 @@
+@startuml
+
+package xpress{
+    package event{
+        package task{
+            class manger<master,slave>{
+                -m_master:master,
+                    -m_slave:slave,
+                    -m_event_name,
+                    -main(void):void,
+                    +manager(string),
+                    +~manager(),
+                    +connect(master&):int32_t,
+                    +connect(slave&):int32_t,
+                    +create(uint32_t,uint64_t),
+                    +destroy(void):int32_t,
+                    +join(void):int32_t,
+            }
+        }
+    }
+}
+
+@enduml
+

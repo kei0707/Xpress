@@ -1,0 +1,5 @@
+@startuml
+!include event_trigger_semaphore.pu
+!include event_trigger_timer.pu
+@enduml
+

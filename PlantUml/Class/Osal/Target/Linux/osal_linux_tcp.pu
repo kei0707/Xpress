@@ -1,0 +1,14 @@
+@startuml
+package xpress{
+    package osal{
+        package linux{
+            class tcp{
+                +tcp(),
+                +~tcp(),
+                +accept(string,port):int32_t,
+                +listen(string,port):int32_t,
+            }
+        }
+    }
+}
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+package xpress {
+    package event{
+        package task{
+            abstract class node<node_impliment>{
+                +connect(node_impliment&):int32_t,
+                +process(void):int32_t,
+                +process_error(int32_t):void
+            }
+        }
+    }
+}
+@enduml

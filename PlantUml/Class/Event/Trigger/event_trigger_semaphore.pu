@@ -1,0 +1,14 @@
+@startuml
+
+package xpress{
+    package event{
+        package trigger{
+            class semaphore{
+                +connect(node_impliment&):int32_t,
+                +process(void):int32_t,
+                +process_error(int32_t):void
+            }
+        }
+    }
+}
+@enduml

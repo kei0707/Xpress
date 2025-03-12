@@ -1,0 +1,6 @@
+@startuml
+
+!include  event_task_node.pu
+!include  event_task_manager.pu
+
+@enduml

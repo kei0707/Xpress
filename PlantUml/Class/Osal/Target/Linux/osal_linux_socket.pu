@@ -1,0 +1,28 @@
+@startuml
+
+package xpress{
+    package osal{
+        package linux{
+
+            class socket{
+                -m_fd:int32_t,
+                -m_local_addr:string,
+                -m_local_port:int32_t,
+                -m_remote_addr:string,
+                -m_remote_port:int32_t,
+                +socket(),
+                +~socket(),
+                +local(string,int32_t),
+                +remote(string,int32_t),
+                +bind(),
+                +connect(),
+                +open(void):int32_t,
+                +close(void):int32_t,
+                +write(char*,uint32_t):int32_t,
+                +read(char*,uint32_t):int32_t,
+            }
+        }
+    }
+}
+
+@enduml

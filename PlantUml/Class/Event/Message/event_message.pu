@@ -1,0 +1,6 @@
+@startuml
+
+!include  event_message_queue.pu
+!include  event_message_socket.pu
+
+@enduml

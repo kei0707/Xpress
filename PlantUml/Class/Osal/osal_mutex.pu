@@ -1,0 +1,21 @@
+@startuml
+
+package xpress{
+    package osal{
+        class mutex<osal_target_class=default_target>{
+            -m_target_obj:osal_target_class,
+            +mutex(),
+            +~mutex(),
+            +create(string):int32_t,
+            +destroy(void):int32_t,
+            +unlock(void):int32_t,
+            +unlock(uint64_t):int32_t,
+            +lock(void):int32_t,
+            +lock(uint64_t):int32_t,
+            +try_lock(void):int32_t,
+            +try_lock(uint64_t):int32_t,
+        }
+
+    }
+}
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+
+!include osal_thread.pu
+!include osal_semaphore.pu
+!include osal_mutex.pu
+!include osal_thread.pu
+
+
+
+!include ./Target/Linux/osal_linux.pu
+!include ./Target/FreeRTOS/osal_freertos.pu
+
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+package xpress{
+    package osal{
+        class timer<osal_target_class=default_target>{
+            -m_target_obj:osal_target_class,
+            +timer(),
+            +~timer(),
+            +sec(uint64_t):void,
+            +msec(uint64_t):void,
+            +usec(uint64_t):void,
+            +nsec(uint64_t):void,
+            +oneshot(void):int32_t,
+            +cyclic(void):int32_t,
+            +create(void):int32_t,
+            +destroy(void):int32_t,
+            +begin(void):int32_t,
+            +stop(void):int32_t,
+            +wait(void):int32_t,
+        }
+    }
+}
+@enduml

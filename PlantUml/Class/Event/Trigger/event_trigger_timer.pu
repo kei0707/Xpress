@@ -1,0 +1,17 @@
+@startuml
+
+package xpress{
+    package event{
+        package trigger{
+            class timer{
+                +timer(xpress::osal::timer&),
+                    +~timer(),
+                    +process(void):int32_t,
+                    +process_error(int32_t):void,
+            }
+        }
+    }
+}
+
+
+@enduml

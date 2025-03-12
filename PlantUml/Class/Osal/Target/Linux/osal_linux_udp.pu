@@ -1,0 +1,13 @@
+@startuml
+package xpress{
+    package osal{
+        package linux{
+            class udp{
+                +udp(),
+                +~udp(),
+                +multicast(string,port):int32_t,
+            }
+        }
+    }
+}
+@enduml

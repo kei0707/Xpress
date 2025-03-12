@@ -1,0 +1,15 @@
+@startuml
+
+!include osal_linux_mutex.pu
+!include osal_linux_queue.pu
+!include osal_linux_semaphore.pu
+!include osal_linux_socket.pu
+!include osal_linux_tcp.pu
+!include osal_linux_thread.pu
+!include osal_linux_timer.pu
+!include osal_linux_udp.pu
+
+udp<|--socket
+tcp<|--socket
+
+@enduml

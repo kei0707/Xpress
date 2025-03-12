@@ -1,0 +1,18 @@
+@startuml
+package xpress {
+    package osal{
+        class semaphore<osal_target_class=default_target>{
+            -m_target_obj:osal_target_class,
+            +semaphore(),
+            +~semaphore(), 
+            +create(string,uint32_t):int32_t,
+            +destroy(void):int32_t,
+            +take(void):int32_t,
+            +take(uint64_t):int32_t,
+            +give(void):int32_t,
+        }
+    }
+}
+
+@enduml
+

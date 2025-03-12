@@ -1,0 +1,17 @@
+@startuml
+
+package xpress{
+    package event{
+        package message{
+            class queue{
+                +queue()
+                    +~queue()
+                    +connect(osal::queue&):int32_t,
+                    +process(void):int32_t,
+                    +process_error(int32_t):void,
+            }
+        }
+    }
+}
+
+@enduml

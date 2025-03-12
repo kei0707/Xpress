@@ -1,0 +1,7 @@
+@startuml
+
+!include ./Event/event.pu
+!include ./Osal/osal.pu
+
+@enduml
+
